@@ -1,0 +1,80 @@
+{"intents": [
+  {"tag": "greetings",
+  "patterns": ["Hello","hello","hey","Hi","hi","good day","Greetings","good afternoon","good morning","how can I help you?","how can I assist you?","what can I do for you?","Hey there", "Hi, how can I assist you?"]
+  "responses": ["Hello! Could you please come to our home as there is an electrical issue?","Hey! There is an electrical issue in our home. Can you please come?","There's an electrical issue in our house. Can you please come?"]
+  },
+{"tag": "issue",
+    "patterns": ["what is the issue?","What is the problem?","what's the matter?","What's the trouble?","What is wrong?", "where is the problem?", "Please let me know the problem", "Please tell me the problem","Please tell me the issue"],
+    "responses": ["There is a short circuit in the house"]
+  },
+
+{"tag": "address",
+    "patterns": ["can you tell me your address", "where is your home?", "where should I come","Please tell me your address.","Please tell me where you live.","Tell me what your address is.","I need you to tell me your address."],
+    "responses": ["XYZ"]
+  },
+
+{"tag": "date ",
+    "patterns": [" when?","date","When are you looking to fix the issue?","What date do you have in mind?","When do you want me to come in?","What day works best for you?","when do you want the issue to be fixed?","on which day do you want me to come?" ],
+    "responses": ["today ","tomorrow"]
+  },
+
+ {"tag": "name",
+  "patterns": ["what is the name","What's your name?","May I know your name?","Who am I speaking to?","What should I call you?","name","what's your name","who are you","what should I call you","how can I address you","who’s speaking"],
+  "responses": ["shreya"]
+  },
+
+ {"tag": "time",
+  "patterns": ["At what time do you want me to come in","What time are you available?","What time do you want to schedule my visit?","Do you have a preferred time?","What time works for you?", "at what time","time please","time","could you please tell me the time?"],
+  "responses": ["2pm"]
+  },
+
+{"tag": "confirm",
+  "patterns": ["Do I confirm the timings of my arrival?","I will be on time","See you at 2pm on Thursday","Do you want me to confirm the timings","I am leaving","Have a Good Day","bye","see ya"],
+  "responses": ["Yes Thank you","Yes, Thank you so much","Yes please"]
+  },
+
+{"tag": "free",
+    "patterns": ["Let me check my schedule","I am free on 12pm on Friday", "Would you mind if i come on 9am on thursday","I can’t make it this week, Are you fine with next week?","Please wait, I’ll check for other time"],
+    "responses": ["Yes!No Problem","Yeah! I'm free on that day.","Yes please"]
+  },
+
+{"tag": "notAvailable",
+  "patterns": ["I am worried I am  not available on that date","I'm sorry I can’t make it on that day","I am not free on that day","Sorry can I come some other time?","I can’t come that day", "I won’t be able to come on that day"],
+  "responses": ["It’s okay, I'll get back to you","Okay no problem"]
+  },
+
+{"tag": " wrong number",
+    "patterns": ["sorry it’s a wrong number","wrong number","Please check the number, you have dialled a wrong number","you have called to a wrong number", "you have called to a wrong person"],
+    "responses": ["sorry my bad","oops! I’m really sorry"]
+  },
+
+{"tag": "anythingElse",
+    "patterns": ["I can come on time. Anything else?", " can I help you with anything else?","Do you want anything else?","Anything else that i can do for you?","Anything else?"],
+    "responses": ["No Thank you so much"," No Thank you"]
+  },
+
+{"tag": "phoneNumber",
+    "patterns": ["May I have your phone number?","Can I get your phone number?","Can you share your phone number please?","Can you tell me your phone number please "],
+    "responses": ["yeah sure my number is 1234567890 "]
+  },
+
+ {"tag": "invalid",
+    "patterns": ["","gvsd","asbhk"],
+    "responses": ["Sorry","  I didn't understand you", "Please give me more info", "Not sure I understood","", "Sorry, I don't understand", "Can you please rephrase?", "I'm not sure what you mean"]
+  },
+
+  {"tag": " ",
+    "patterns": ["","gvsd","asbhk"],
+    "responses": ["Are you there?","Am I audible?"]
+  },
+
+  {"tag": "ok ",
+    "patterns": ["okay","ok","OK","ha", "hmm", "Umm", "umm","Ahaan","cool"],
+    "responses": ["okay"]
+  },
+
+  {"tag": "thanks",
+    "patterns": ["Thanks", "Thank you","Thank you for calling me, Have a nice day","Feel free to call me anytime"],
+    "responses": [ "Thank you","Any time!", "My pleasure"]
+  }
+]}

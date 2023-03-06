@@ -1,0 +1,52 @@
+{"intents": [
+  {"tag": "greetings",
+  "patterns": ["Hello","hello","hey","Hi","hi","good day","Greetings","good afternoon","good morning","how can I help you?","how can I assist you?","what can I do for you?","Hey there", "Hi, how can I assist you?"],
+  "responses": ["Hello! There is an emergency, I want to book an ambulance right now","Hello! There is an emergency, I want to book a fire engine right now "]
+  },
+
+  {"tag": "name",
+  "patterns": ["what is the name","What's your name?","May I know your name?","Who am I speaking to?","What should I call you?","name","what's your name","who are you","what should I call you","how can I address you","who’s speaking"],
+  "responses": ["shreya"]
+  },
+ 
+  {"tag": "time",
+  "patterns": ["At what time do you want the ambulance to arrive","At what time do you want the fire engine to arrive", "When do you want the ambulance to arrive","When do you want the fire engine to arrive", "at what time","time please", "time", "could you please tell me the time"],
+  "responses": ["4 pm","5 pm"]
+  },
+
+{"tag": "phoneNumber",
+    "patterns": ["May I have your phone number?","Can I get your phone number?","Can you share your phone number please?","Can you tell me your phone number please "],
+    "responses": ["yeah sure my number is 1234567890 "]
+  },
+
+{"tag": "issue",
+    "patterns": ["what is the issue?","What is the problem?","what's the matter?","What's the trouble?","What is wrong?", "where is the problem?", "Please let me know the problem", "Please tell me the problem","Please tell me the issue"],
+    "responses": ["There is a leakage"]
+  },
+
+{"tag": " wrong number",
+    "patterns": ["sorry it’s a wrong number","wrong number","Please check the number, you have dialled a wrong number","you have called to a wrong number", "you have called to a wrong place"],
+    "responses": ["sorry my bad","oops! I’m really sorry"]
+  },
+
+ {"tag": "invalid",
+    "patterns": ["","gvsd","asbhk"],
+    "responses": ["Sorry","  I didn't understand you", "Please give me more info", "Not sure I understood","", "Sorry, I don't understand", "Can you please rephrase?", "I'm not sure what you mean"]
+  },
+
+  {"tag": " ",
+    "patterns": ["","gvsd","asbhk"],
+    "responses": ["Are you there?","Am I audible?"]
+  },
+
+  {"tag": "ok ",
+    "patterns": ["okay","ok","OK","ha", "hmm", "Umm", "umm","Ahaan","cool"],
+    "responses": ["okay"]
+  },
+
+{"tag": "thanks",
+    "patterns": ["don’t worry, we’ll be on time", "Nothing to worry,we’ll make it on time"],
+    "responses": [ "Thank you"]
+  }
+
+]}

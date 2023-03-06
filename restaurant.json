@@ -1,0 +1,81 @@
+{"intents": [
+  {"tag": "greetings",
+  "patterns": ["Hello","hello","hey","Hi","hi","good day","Greetings","good afternoon","good morning","how can I help you?","how can I assist you?","what can I do for you?","Hey there", "Hi, how can I assist you?"],  "responses": ["Hello! I would like to make a table reservation","Hey! I need to make a breakfast reservation","Hi, could you help me? I need to make a dinner reservation.","Hello! I would like to make a reservation for lunch"]
+  },
+
+   {"tag": "name",
+  "patterns": ["what is the name","What's your name?","May I know your name?","Who am I speaking to?","What should I call you?","name","what's your name","who are you","what should I call you","how can I address you","who’s speaking"],
+  "responses": ["shreya"]
+  },
+ 
+{"tag": "date ",
+    "patterns": [" when?","date","When are you looking to reserve the table?","What date do you have in mind?","When do you want to come in?","What day works best for you?","when do you want the table reservation for?","when do you want the reservation", "for which date do you want the table reservation" ],
+    "responses": ["today ","tomorrow"]
+  },
+
+  {"tag": "time",
+  "patterns": ["What time would you like the reservation for?","What time will you be dining with us?","At what time","What time do you think you would like to have your dinner?", "at what time","time please", "could you please tell the time for the reservation","time", "At what time will you be coming?", "At what time you will be arriving us"],
+  "responses": ["1 pm","3 pm"]
+  },
+
+{"tag": " wrong number",
+    "patterns": ["sorry it’s a wrong number","wrong number","Please check the number, you have dialled a wrong number","you have called to a wrong number", "you have called to a wrong place"],
+    "responses": ["sorry my bad","oops! I’m really sorry"]
+  },
+
+ {"tag": "members",
+    "patterns": ["How many people will you need the reservation for?","How many guests will be at your party?","How many diners will be in your group?","For how many of you shall i reserve?"],
+    "responses": ["4","5"]
+  },
+  
+  {"tag": "confirm",
+  "patterns": ["Do I confirm the booking?","Your table is booked","See you at 2pm on Thursday","I confirm the reservation","Do you want me to confirm the reservation","I am leaving","Have a Good Day","Your table is booked","bye","see ya"],
+  "responses": ["Yes Thank you","Yes, Thank you so much","Yes please"]
+  },
+
+ {"tag": "notAvailable",
+  "patterns": ["I am worried we don't have any tables free at 2pm","I'm sorry tables are booked at that time","Sorry, the restaurant is full on that day","Its not available for your time,let me find an other option for you"],
+  "responses": ["Do you have other slots available","Which day is it available","On which day is it free","At what time can you allot the table"]
+  },
+
+  {"tag": "free",
+    "patterns": ["Let me check for free slots","We have a free slot at 12pm on Friday", "would you like to book a table at 9am on thursday","Would you want to check the other free slots?","Please wait, I’ll check for other slots"],
+    "responses": ["Yes!Book that for me","Yeah! I'm free on that day.","Yes please"]
+  },
+
+{"tag": "previousAppointment ",
+    "patterns": ["Do you want to re book the table with us?","Do you want to re schedule this reservation?","Do you want to repeat this booking?"],
+    "responses": ["yes please", "Yes"] 
+  },
+  
+  {"tag": "anythingElse",
+    "patterns": ["Your table is booked. Anything else?","You have a reservation set. Anything else?", " can I help you with anything else?","Do you want anything else?","Anything else that i can do for you?","Anything else?"],
+    "responses": ["No Thank you so much"," No Thank you"]
+  },
+
+{"tag": "phoneNumber",
+    "patterns": ["May I have your phone number?","Can I get your phone number?","Can you share your phone number please?","Can you tell me your phone number please "],
+    "responses": ["yeah sure my number is 1234567890 "]
+  },
+
+   {"tag": "invalid",
+    "patterns": ["","gvsd","asbhk"],
+    "responses": ["Sorry","  I didn't understand you", "Please give me more info", "Not sure I understood","", "Sorry, I don't understand", "Can you please rephrase?", "I'm not sure what you mean"]
+  },
+
+  {"tag": " ",
+    "patterns": ["","gvsd","asbhk"],
+    "responses": ["Are you there?","Am I audible?"]
+  },
+
+  {"tag": "ok ",
+    "patterns": ["okay","ok","OK","ha", "hmm", "Umm", "umm","Ahaan","cool"],
+    "responses": ["okay"]
+  },
+
+  {"tag": "thanks",
+    "patterns": ["Thanks", "Thank you","Thank you for calling us, have a nice day","Feel free to call us anytime"],
+    "responses": [ "Thank you","Any time!", "My pleasure"]
+  }
+]}
+
