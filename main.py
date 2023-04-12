@@ -115,7 +115,7 @@ def chatbot_response(msg,model,intents,words,classes):
 
 app = Flask(__name__)
 
-'''@app.route('/', methods=['GET'])
+@app.route('/', methods=['GET'])
 def hello():
     return 'Book Your Appointments'
 
@@ -128,7 +128,7 @@ def decrypt(msg):
     #new_string is the normal message with spaces that was sent by the user
     new_string = string.replace("+", " ")
     
-    return "hello " '''
+    return "hello " 
 
 #here we will send a string from the client and the server will return another
 #string with som modification
