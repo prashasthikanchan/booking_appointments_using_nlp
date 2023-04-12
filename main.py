@@ -128,7 +128,9 @@ def decrypt(msg):
     #new_string is the normal message with spaces that was sent by the user
     new_string = string.replace("+", " ")
     
-    return "hello " 
+    return jsonify({'machine':'hello'})
+
+
 
 #here we will send a string from the client and the server will return another
 #string with som modification
@@ -147,6 +149,7 @@ def electrician(name):
     
     #get the response from the ML model & dec_msg as the argument
     response = chatbot_response(dec_msg,model,intents,words,classes)
+    
     
     # retrieve the user's data from the Realtime Database
     #ref = db.reference('/prash/-NPmLDGT5Mvob4GFXAe_',None)
@@ -180,6 +183,8 @@ def vehicle(name):
     classes = pickle.load(open('vehicle_classes.pkl', 'rb'))
     model = load_model('vehicle_chatbotmodel.h5')
     
+    
+    
     #get the response from the ML model & dec_msg as the argument
     response = chatbot_response(dec_msg,model,intents,words,classes)
     
@@ -201,15 +206,17 @@ def hospital(name):
     classes = pickle.load(open('hospital_classes.pkl', 'rb'))
     model = load_model('hospital_chatbotmodel.h5')
     
+    
     #get the response from the ML model & dec_msg as the argument
     response = chatbot_response(dec_msg,model,intents,words,classes)
+    
     
     if response == "bye":
         # exit the application if the user says "bye"
         request.environ.get('werkzeug.server.shutdown')()
     
     
-    return response
+    return jsonify({'machine':response})
 
 @app.route('/restaurant/<name>', methods= ['GET']) 
 def restaurant(name):
@@ -316,4 +323,4 @@ def emergency(name):
     return response
 
 if __name__ == '__main__':
-    app.run(debug=True, threaded = False)
+    app.run(host = "0.0.0.0",debug=True,threaded=False)
