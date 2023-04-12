@@ -1,0 +1,78 @@
+{"intents": [
+  {"tag": "greetings",
+  "patterns": ["Hello","hello","hey","Hi","hi","good day","Greetings","good afternoon","good morning","how can I help you?","how can I assist you?","what can I do for you?","Hey there","Hi, how can I assist you?"],
+  "responses": ["Hello! I would like to book a haircut appointment at your salon","Hey! I wanted to book a haircut appointment at your salon","I would like to make an haircut appointment"]
+  },
+
+   {"tag": "name",
+  "patterns": ["what is the name","What's your name?","May I know your name?","Who am I speaking to?","What should I call you?","name","what's your name","who are you","what should I call you","how can I address you","who’s speaking"],
+  "responses": ["shreya"]
+  },
+ 
+{"tag": "date ",
+    "patterns": [" when?","date","When are you looking to schedule the appointment?","What date do you have in mind?","When do you want to come in?","What day works best for you?","when do you want the appointment for?","when do you want the appointment", "for which date do you want the appointment" ],
+    "responses": ["today ","tomorrow"]
+  },
+
+   {"tag": "time",
+  "patterns": ["At what time do you want the appointment","What time are you available?","What time do you want to schedule the appointment?","Do you have a preferred time?","What time works for you?", "at what time","time please", "could you please tell the time?","time", "At what time will you be coming?", "At what time you will be arriving us"],
+  "responses": ["2pm"]
+  },
+
+{"tag": " wrong number",
+    "patterns": ["sorry it’s a wrong number","wrong number","Please check the number, you have dialled a wrong number","you have called to a wrong number", "you have called to a wrong place"],
+    "responses": ["sorry my bad","oops! I’m really sorry"]
+  },
+  
+  {"tag": "confirm",
+  "patterns": ["Do I confirm the appointment?","Your appointment is booked","See you at 2pm on Thursday","I confirm the appointment","Do you want me to confirm the appointment","Your slot is booked","I am leaving","Have a Good Day","bye","see ya"],
+  "responses": ["Yes Thank you","Yes, Thank you so much","Yes please"]
+  },
+
+  {"tag": "free",
+    "patterns": ["Let me check for free slots","We have a free slot at 12pm on Friday", "would you like to book an appointment at 9am on thursday","Would you want to check the other free slots?","Please wait, I’ll check for other slots"],
+    "responses": ["Yes!Book that appointment for me","Yeah! I'm free on that day.","Yes please"]
+  },
+  
+   {"tag": "notAvailable",
+  "patterns": ["I am worried we don't have an appointment at 2pm","I'm sorry we are not available at that time","No slots are available for that date","No slots are available for that time"],
+  "responses": ["It’s okay, I'll get back to you","Okay no problem"]
+  },
+
+  {"tag": "anythingElse",
+    "patterns": ["Your appointment is booked. Anything else?","You have an appointment set. Anything else?", " can I help you with anything else?","Do you want anything else?","Anything else that i can do for you?","Anything else?"],
+    "responses": ["No Thank you so much"," No Thank you"]
+  },
+
+{"tag": "previousAppointment ",
+    "patterns": ["Do you want to re book this appointment?","Do you want to re schedule this appointment?","Do you want to repeat this appointment?"],
+    "responses": ["yes please", "Yes"] 
+  },
+
+  {"tag": "invalid",
+    "patterns": ["","gvsd","asbhk"],
+    "responses": ["Sorry","  I didn't understand you", "Please give me more info", "Not sure I understood","", "Sorry, I don't understand", "Can you please rephrase?", "I'm not sure what you mean"]
+  },
+
+  {"tag": " ",
+    "patterns": ["","gvsd","asbhk"],
+    "responses": ["Are you there?","Am I audible?"]
+  },
+
+  {"tag": "ok ",
+    "patterns": ["okay","ok","OK","ha", "hmm", "Umm", "umm","Ahaan","cool"],
+    "responses": ["okay"]
+  },
+
+{"tag": "phoneNumber",
+    "patterns": ["May I have your phone number?","Can I get your phone number?","Can you share your phone number please?","Can you tell me your phone number please "],
+    "responses": ["yeah sure my number is 1234567890 "]
+  },
+
+  {"tag": "thanks",
+    "patterns": ["Thanks", "Thank you","Thank you for calling us,Have a nice day","Feel free to call us anytime"],
+    "responses": [ "Thank you","Any time!", "My pleasure"]
+  }
+]}
+
+
