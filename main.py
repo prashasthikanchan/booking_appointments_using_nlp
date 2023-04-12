@@ -142,7 +142,7 @@ def electrician(name):
     #dec_msg is the real question asked by the user
     dec_msg = name.replace("+", " ")
     
-    intents = json.loads(open("E:\Major Project\AI chatbot\electrician.json").read())
+    intents = json.loads(open("electrician.json").read())
     words = pickle.load(open('electrician_words.pkl', 'rb'))
     classes = pickle.load(open('electrician_classes.pkl', 'rb'))
     model = load_model('electrician_chatbotmodel.h5')
@@ -178,7 +178,7 @@ def vehicle(name):
     #dec_msg is the real question asked by the user
     dec_msg = name.replace("+", " ")
     
-    intents = json.loads(open("E:\Major Project\AI chatbot\vehicle.json").read())
+    intents = json.loads(open("vehicle.json").read())
     words = pickle.load(open('vehicle_words.pkl', 'rb'))
     classes = pickle.load(open('vehicle_classes.pkl', 'rb'))
     model = load_model('vehicle_chatbotmodel.h5')
@@ -201,7 +201,7 @@ def hospital(name):
     #dec_msg is the real question asked by the user
     dec_msg = name.replace("+", " ")
     
-    intents = json.loads(open("E:\Major Project\AI chatbot\hospital.json").read())
+    intents = json.loads(open("hospital.json").read())
     words = pickle.load(open('hospital_words.pkl', 'rb'))
     classes = pickle.load(open('hospital_classes.pkl', 'rb'))
     model = load_model('hospital_chatbotmodel.h5')
@@ -224,7 +224,7 @@ def restaurant(name):
     #dec_msg is the real question asked by the user
     dec_msg = name.replace("+", " ")
     
-    intents = json.loads(open("E:\Major Project\AI chatbot\restaurant.json").read())
+    intents = json.loads(open("restaurant.json").read())
     words = pickle.load(open('restaurant_words.pkl', 'rb'))
     classes = pickle.load(open('restaurant_classes.pkl', 'rb'))
     model = load_model('restaurant_chatbotmodel.h5')
@@ -245,7 +245,7 @@ def salon(name):
     #dec_msg is the real question asked by the user
     dec_msg = name.replace("+", " ")
     
-    intents = json.loads(open("E:\Major Project\AI chatbot\salon.json").read())
+    intents = json.loads(open("salon.json").read())
     words = pickle.load(open('salon_words.pkl', 'rb'))
     classes = pickle.load(open('salon_classes.pkl', 'rb'))
     model = load_model('salon_chatbotmodel.h5')
@@ -267,7 +267,7 @@ def dentist(name):
     #dec_msg is the real question asked by the user
     dec_msg = name.replace("+", " ")
     
-    intents = json.loads(open("E:\Major Project\AI chatbot\dentist.json").read())
+    intents = json.loads(open("dentist.json").read())
     words = pickle.load(open('dentist_words.pkl', 'rb'))
     classes = pickle.load(open('dentist_classes.pkl', 'rb'))
     model = load_model('dentist_chatbotmodel.h5')
@@ -288,7 +288,7 @@ def plumber(name):
     #dec_msg is the real question asked by the user
     dec_msg = name.replace("+", " ")
     
-    intents = json.loads(open("E:\Major Project\AI chatbot\plumber.json").read())
+    intents = json.loads(open("plumber.json").read())
     words = pickle.load(open('plumber_words.pkl', 'rb'))
     classes = pickle.load(open('plumber_classes.pkl', 'rb'))
     model = load_model('plumber_chatbotmodel.h5')
@@ -308,7 +308,7 @@ def emergency(name):
     #dec_msg is the real question asked by the user
     dec_msg = name.replace("+", " ")
     
-    intents = json.loads(open("E:\Major Project\AI chatbot\emergency.json").read())
+    intents = json.loads(open("emergency.json").read())
     words = pickle.load(open('emergency_words.pkl', 'rb'))
     classes = pickle.load(open('emergency_classes.pkl', 'rb'))
     model = load_model('emergency_chatbotmodel.h5')
