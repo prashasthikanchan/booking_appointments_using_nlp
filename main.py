@@ -135,7 +135,7 @@ def decrypt(msg):
 #here we will send a string from the client and the server will return another
 #string with som modification
 #creating a url dynamically
-@app.route('/electrician/<name>', methods= ['GET']) 
+"""@app.route('/electrician/<name>', methods= ['GET']) 
 def electrician(name):
     
     
@@ -320,7 +320,7 @@ def emergency(name):
         # exit the application if the user says "bye"
         request.environ.get('werkzeug.server.shutdown')()   
     
-    return response
+    return response"""
 
 if __name__ == '__main__':
     app.run(host = "0.0.0.0",debug=True,threaded=False)
